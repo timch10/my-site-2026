@@ -1,0 +1,118 @@
+/* Красим фон всей страницы */
+body {
+    background-color: #e8f5e9;
+    font-family: sans-serif; /* Сделаем шрифт более современным */
+}
+
+/* Красим ВСЕ заголовки h1 на сайте */
+h1 {
+    color: green;
+}
+
+/* Красим ВСЕ параграфы сразу */
+p {
+    color: darkgreen;
+    font-weight: bold;
+}
+
+/* Уберем подчеркивание у ссылок и сделаем их зелеными */
+a {
+    color: #2e7d32;
+    text-decoration: none;
+}
+table {
+    border-collapse: collapse; /* Убирает двойные рамки */
+    width: 100%; /* Растягивает таблицу */
+    max-width: 400px; /* Чтобы она не была слишком огромной */
+}
+
+td {
+    border: 2px solid green; /* Рисуем красивую зеленую рамку вручную */
+    padding: 10px; /* Добавляем воздух внутри ячеек */
+    text-align: center;
+}
+
+/* Если экран меньше 600px */
+@media (max-width: 600px) {
+    body {
+        background-color: #f1f8e9; /* Сделаем фон чуть светлее на мобилках */
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px; /* Уменьшим заголовок, чтобы он влезал */
+        text-align: center;
+    }
+
+    table {
+        width: 100%; /* Таблица растянется на весь узкий экран */
+        font-size: 14px;
+    }
+
+    img {
+        width: 100%; /* Картинка станет резиновой */
+        height: auto;
+    }
+    .main-nav {
+        flex-direction: column; /* Ссылки встанут друг под другом */
+        align-items: center;
+    }
+}
+
+.main-nav {
+    display: flex;             /* Включаем Flexbox */
+    justify-content: center;   /* Центрируем ссылки */
+    gap: 20px;                 /* Расстояние между ссылками */
+    background: #2e7d32;       /* Темно-зеленый фон */
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.main-nav a {
+    color: white;              /* Ссылки в меню теперь белые */
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;          /* Плавность при наведении */
+}
+
+.main-nav a:hover {
+    color: #a5d6a7;            /* Цвет при наведении */
+}
+
+/* Добавим отступы для всей страницы */
+body {
+    padding: 20px; /* Чтобы текст не прилипал к краям экрана телефона */
+    margin: 0;     /* Обнуляем стандартные отступы браузера */
+}
+
+/* Настраиваем параграфы */
+p {
+    margin-bottom: 20px; /* Отодвигаем следующий параграф вниз */
+    line-height: 1.6;    /* Межстрочный интервал для удобства чтения */
+}
+
+/* Настраиваем таблицу */
+table {
+    margin: 30px 0; /* 30px сверху и снизу, 0 по бокам */
+}
+
+/* Красивая кнопка с большими внутренними отступами */
+button {
+    padding: 12px 24px; /* Сверху/снизу 12px, слева/справа 24px */
+    margin-top: 10px;   /* Отодвигаем от текста выше */
+    border-radius: 8px;
+    border: none;
+    background-color: #2e7d32;
+    color: white;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 800px;  /* Максимальная ширина */
+    margin: 0 auto;    /* МАГИЯ: центрирует блок по горизонтали */
+    background: white; /* Сделаем подложку белой */
+    padding: 40px;     /* Внутренний отступ, чтобы текст не касался краев белого блока */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Легкая тень */
+}

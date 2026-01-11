@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- Декларация: говорим браузеру, что это современный стандарт -->
+<html lang="ru"> <!-- Главный контейнер, язык — русский -->
+
+<head>
+   <meta charset="UTF-8">
+    <title>Страница Феди</title>
+    <!-- Вот эта магическая связь: -->
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <nav class="main-nav">
+        <a href="#about">Обо мне</a>
+        <a href="#goals">Цели</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+    
+    <div class="container">
+    <h1>Меня зовут Федя</h1> <!-- Заголовок 1-го уровня (самый главный) -->
+
+    <a target="_blank" href="https://itproger.com">
+        <img src="https://do3.pskgu.ru/pluginfile.php/1142983/course/overviewfiles/html_1920_1031_jpg_0_100.jpg" alt="HTML" width="300">
+    </a>
+
+    
+    <p>Это мой первый параграф текста. Я изучаю основы.</p>
+    <p>Это мой второй параграф</p>
+    
+    <h2 id = "goals">Мои цели на 2026 год:</h2> <!-- Заголовок поменьше -->
+    
+    <ul> <!-- Unordered List: маркированный список -->
+        <li>Выучить HTML</li>
+        <li>Понять, как работают сайты</li>
+        <li>Создать свой первый проект</li>
+        <li>Не знаю что тут написать</li>
+
+        <table> 
+            <tr>
+                <td>День</td>
+                <td>Что учу</td>
+            </tr>
+            <tr>
+                <td>Понедельник</td>
+                <td>HTML Теги</td>
+            </tr>
+</table>
+
+    </ul>
+
+    <a href="https://www.google.com" target="_blank">Перейти в Google</a>
+
+    <hr> <!-- Это просто горизонтальная линия-разделитель -->
+    <h3>Напиши мне:</h3>
+
+    <form>
+        <!-- Поле для ввода имени -->
+        <input type="text" id="userName" placeholder="Твое имя">
+        <!-- Добавили id="userName" -->
+
+        <br><br>
+    
+        <!-- Поле для выбора любимого цвета (в 2026 это удобно!) -->
+        <label>Выбери свой любимый цвет:</label>
+        <input type="color">
+        <br><br>
+    
+        <!-- Кнопка отправки -->
+        <button type="button" onclick="sayHello()">Отправить сообщение</button>
+        <!-- Добавили onclick="sayHello()" — это команда запустить функцию -->
+
+    </form>
+
+    <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
+
+
